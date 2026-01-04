@@ -12,4 +12,4 @@
 -c ../tools/requirements.txt
 -e acme
 -e certbot
--e certbot-dns-cloudflare[docs]
+-e certbot-dns-cloudflare4[docs]
