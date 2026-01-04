@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "certbot-dns-cloudflare4"
-dynamic = ["version", "dependencies"]
+version = "0.9"
 description = "Cloudflare 4 DNS Authenticator plugin for Certbot"
 readme = "README.rst"
 license = "Apache-2.0"
@@ -31,7 +31,11 @@ classifiers = [
     "Topic :: System :: Systems Administration",
     "Topic :: Utilities",
 ]
-
+dependencies = [
+    "cloudflare>=4.0, <5",
+    "acme>=5.1.0",
+    "certbot>=5.1.0",
+]
 [project.optional-dependencies]
 docs = [
     "Sphinx>=1.0", # autodoc_member_order = 'bysource', autodoc_default_flags
