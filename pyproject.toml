@@ -37,9 +37,6 @@ docs = [
     "Sphinx>=1.0", # autodoc_member_order = 'bysource', autodoc_default_flags
     "sphinx_rtd_theme",
 ]
-test = [
-    "pytest",
-]
 
 [project.entry-points."certbot.plugins"]
 dns-cloudflare4 = "certbot_dns_cloudflare4._internal.dns_cloudflare4:Authenticator"
